@@ -12,20 +12,20 @@
     <link rel="stylesheet" href="../dist/output.css">
 </head>
 <body>
-    <nav>
-        <div class="bg-black/60 w-full h-20 fixed z-50">
-            <ul class=" text-white/80 right-0 top-0 uppercase text-sm hidden lg:flex h-20 justify-end md:mr-36 items-center cursor-pointer ">
-                <li class="mr-10 hover:text-white ">Home</li>
-                <li class="mr-10 hover:text-white ">Rooms</li>
-                <li class="mr-10 hover:text-white ">Facilities</li>
-                <li class="mr-10 hover:text-white ">reservation</li>
-                <li class="mr-10 hover:text-white ">gallery</li>
-                <li class="mr-10 hover:text-white ">news</li>
-                <li class="">contact</li>
+    <nav >
+        <div class="bg-black/60 w-full h-10 md:h-20 fixed z-50">
+            <ul id="menuContainer" class=" text-white/80 right-0 hidden top-0 uppercase text-sm mt-10 md:mt-0 pl-6 py-6 md:ml-0 md:flex md:h-20 justify-end md:mr-36 items-center cursor-pointer bg-black/60 md:bg-transparent transition-all duration-150">
+                <li class="mr-10 mb-6 md:mb-0 md:hover:text-white hover:text-black hover:bg-white hover:p-3 md:hover:bg-transparent md:hover:p-0">Home</li>
+                <li class="md:mr-10 mb-6 md:mb-0 md:hover:text-white hover:text-black hover:bg-white hover:p-3 md:hover:bg-transparent md:hover:p-0 ">Rooms</li>
+                <li class="md:mr-10 mb-6 md:mb-0 md:hover:text-white hover:text-black hover:bg-white hover:p-3 md:hover:bg-transparent md:hover:p-0 ">Facilities</li>
+                <li class="md:mr-10 mb-6 md:mb-0 md:hover:text-white hover:text-black hover:bg-white hover:p-3 md:hover:bg-transparent md:hover:p-0 ">reservation</li>
+                <li class="md:mr-10 mb-6 md:mb-0 md:hover:text-white hover:text-black hover:bg-white hover:p-3 md:hover:bg-transparent md:hover:p-0 ">gallery</li>
+                <li class="md:mr-10 mb-6 md:mb-0 md:hover:text-white hover:text-black hover:bg-white hover:p-3 md:hover:bg-transparent md:hover:p-0 ">news</li>
+                <li class="md:hover:text-white hover:text-black hover:bg-white hover:p-3 md:hover:bg-transparent md:hover:p-0">contact</li>
             </ul>
 
-            <div class=" absolute right-3 bottom-5 menu w-10 h-10 md:inline-block lg:hidden cursor-pointer">
-                <i class='bx bx-menu text-3xl text-white'></i>
+            <div id="menuBtn" class=" absolute right-3 bottom-5 menu w-10 h-10 md:inline-block lg:hidden cursor-pointer">
+                <i class='bx bx-menu text-3xl text-white mt-6 md:mt-0'></i>
             </div>
         </div>
     </nav>
@@ -139,7 +139,7 @@
             <img class=" rounded-full md:rounded-none m-auto mt-5 md:mt-0 md:ml-5 w-64 h-60 md:w-48 md:h-48" src="https://images.unsplash.com/photo-1618862629322-70b42024da10?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="">
         </div>
     </section>
-    <footer class="text-center md:flex md:justify-around bg-gray-900 mt-6 px-12 py-20 text-white">
+    <footer class="text-center md:flex md:justify-around bg-gray-900 mt-6 px-6 md:px-12 py-6 md:py-20 text-white">
         <div class="mb-6 md:mb-0">
             <h2 class="text-4xl mb-2">MyHotel</h2>
             <p>2019 myhotel theme by kyaw.com</p>
@@ -154,5 +154,7 @@
             <p class="md:w-80">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, ad. Lorem ipsum dolor sit amet consectetur.</p>
         </div>
     </footer>
+
+    <script src="./js/script.js"></script>
 </body>
 </html>
