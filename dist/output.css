@@ -561,10 +561,6 @@ video {
   margin: auto;
 }
 
-.m-0 {
-  margin: 0px;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -578,11 +574,6 @@ video {
 .my-6 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-}
-
-.mx-3 {
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
 }
 
 .mt-6 {
@@ -637,8 +628,8 @@ video {
   margin-bottom: 2.5rem;
 }
 
-.-mb-16 {
-  margin-bottom: -4rem;
+.mb-16 {
+  margin-bottom: 4rem;
 }
 
 .mb-20 {
@@ -647,6 +638,10 @@ video {
 
 .mb-6 {
   margin-bottom: 1.5rem;
+}
+
+.ml-3 {
+  margin-left: 0.75rem;
 }
 
 .block {
@@ -665,8 +660,8 @@ video {
   display: none;
 }
 
-.h-10 {
-  height: 2.5rem;
+.h-12 {
+  height: 3rem;
 }
 
 .h-\[26rem\] {
@@ -685,56 +680,24 @@ video {
   width: 100%;
 }
 
-.w-fit {
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
 .w-36 {
   width: 9rem;
-}
-
-.max-w-max {
-  max-width: -moz-max-content;
-  max-width: max-content;
-}
-
-.max-w-full {
-  max-width: 100%;
-}
-
-.max-w-fit {
-  max-width: -moz-fit-content;
-  max-width: fit-content;
-}
-
-.max-w-lg {
-  max-width: 32rem;
-}
-
-.max-w-7xl {
-  max-width: 80rem;
-}
-
-.max-w-min {
-  max-width: -moz-min-content;
-  max-width: min-content;
-}
-
-.max-w-screen-2xl {
-  max-width: 1536px;
-}
-
-.max-w-\[19\] {
-  max-width: 19;
 }
 
 .max-w-\[1960px\] {
   max-width: 1960px;
 }
 
-.max-w-\[\] {
-  max-width: ;
+.max-w-full {
+  max-width: 100%;
+}
+
+.max-w-7xl {
+  max-width: 80rem;
+}
+
+.max-w-2xl {
+  max-width: 42rem;
 }
 
 .cursor-pointer {
@@ -769,8 +732,8 @@ video {
   border-width: 1px;
 }
 
-.bg-black\/60 {
-  background-color: rgb(0 0 0 / 0.6);
+.bg-black\/80 {
+  background-color: rgb(0 0 0 / 0.8);
 }
 
 .bg-orange-100 {
@@ -815,12 +778,12 @@ video {
   padding: 1.25rem;
 }
 
-.p-6 {
-  padding: 1.5rem;
+.p-4 {
+  padding: 1rem;
 }
 
-.p-0 {
-  padding: 0px;
+.p-6 {
+  padding: 1.5rem;
 }
 
 .px-5 {
@@ -905,6 +868,11 @@ video {
   line-height: 1.25rem;
 }
 
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -973,14 +941,12 @@ video {
 .menu-container {
   right: 0px;
   top: 0px;
-  margin-top: 2.5rem;
   cursor: pointer;
   align-items: center;
   justify-content: flex-end;
-  background-color: rgb(0 0 0 / 0.6);
-  padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   padding-left: 1.5rem;
+  padding-top: 3rem;
   font-size: 0.875rem;
   line-height: 1.25rem;
   text-transform: uppercase;
@@ -995,6 +961,7 @@ video {
     display: flex;
     height: 5rem;
     background-color: transparent;
+    padding-top: 1rem;
   }
 }
 
@@ -1040,14 +1007,13 @@ video {
   position: absolute;
   right: 0.75rem;
   bottom: 1.25rem;
-  height: 2.5rem;
+  height: 3rem;
   width: 2.5rem;
   cursor: pointer;
 }
 
 @media (min-width: 768px) {
   .menu-btn {
-    display: inline-block;
     display: none;
   }
 }
@@ -1068,8 +1034,8 @@ video {
   border-radius: 0.125rem;
   --tw-bg-opacity: 1;
   background-color: rgb(156 163 175 / var(--tw-bg-opacity));
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
   transition-property: all;
@@ -1087,6 +1053,8 @@ video {
 @media (min-width: 768px) {
   .check-btn {
     width: 15rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 }
 
@@ -1167,6 +1135,11 @@ video {
   color: rgb(194 65 12 / var(--tw-text-opacity));
 }
 
+.hover\:text-gray-700:hover {
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+
 .hover\:duration-100:hover {
   transition-duration: 100ms;
 }
@@ -1190,11 +1163,6 @@ video {
   .md\:mx-5 {
     margin-left: 1.25rem;
     margin-right: 1.25rem;
-  }
-
-  .md\:mx-20 {
-    margin-left: 5rem;
-    margin-right: 5rem;
   }
 
   .md\:mt-0 {
@@ -1249,16 +1217,16 @@ video {
     width: 50%;
   }
 
+  .md\:w-\[400px\] {
+    width: 400px;
+  }
+
   .md\:w-48 {
     width: 12rem;
   }
 
   .md\:w-80 {
     width: 20rem;
-  }
-
-  .md\:w-\[400px\] {
-    width: 400px;
   }
 
   .md\:items-center {
@@ -1279,6 +1247,14 @@ video {
 
   .md\:gap-y-1 {
     row-gap: 0.25rem;
+  }
+
+  .md\:overflow-hidden {
+    overflow: hidden;
+  }
+
+  .md\:overflow-x-scroll {
+    overflow-x: scroll;
   }
 
   .md\:p-6 {
@@ -1366,6 +1342,10 @@ video {
 
   .lg\:w-32 {
     width: 8rem;
+  }
+
+  .lg\:overflow-x-hidden {
+    overflow-x: hidden;
   }
 
   .lg\:pb-0 {
