@@ -525,6 +525,10 @@ video {
   position: relative;
 }
 
+.sticky {
+  position: sticky;
+}
+
 .top-1\/2 {
   top: 50%;
 }
@@ -555,6 +559,10 @@ video {
 
 .m-auto {
   margin: auto;
+}
+
+.m-0 {
+  margin: 0px;
 }
 
 .mx-auto {
@@ -677,12 +685,56 @@ video {
   width: 100%;
 }
 
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .w-36 {
   width: 9rem;
 }
 
+.max-w-max {
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
+
 .max-w-full {
   max-width: 100%;
+}
+
+.max-w-fit {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+.max-w-lg {
+  max-width: 32rem;
+}
+
+.max-w-7xl {
+  max-width: 80rem;
+}
+
+.max-w-min {
+  max-width: -moz-min-content;
+  max-width: min-content;
+}
+
+.max-w-screen-2xl {
+  max-width: 1536px;
+}
+
+.max-w-\[19\] {
+  max-width: 19;
+}
+
+.max-w-\[1960px\] {
+  max-width: 1960px;
+}
+
+.max-w-\[\] {
+  max-width: ;
 }
 
 .cursor-pointer {
@@ -765,6 +817,10 @@ video {
 
 .p-6 {
   padding: 1.5rem;
+}
+
+.p-0 {
+  padding: 0px;
 }
 
 .px-5 {
@@ -1090,7 +1146,7 @@ video {
 @media (min-width: 768px) {
   .img-thmub {
     height: 280px;
-    width: 600px;
+    width: 400px;
   }
 }
 
@@ -1199,6 +1255,10 @@ video {
 
   .md\:w-80 {
     width: 20rem;
+  }
+
+  .md\:w-\[400px\] {
+    width: 400px;
   }
 
   .md\:items-center {

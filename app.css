@@ -31,7 +31,7 @@
 }
 
 .img-thmub {
-    @apply object-cover md:h-[280px] md:w-[600px] cursor-pointer transition-all duration-300 hover:-translate-y-2
+    @apply object-cover md:h-[280px] md:w-[400px] cursor-pointer transition-all duration-300 hover:-translate-y-2
 }
 
 .heading-news {
