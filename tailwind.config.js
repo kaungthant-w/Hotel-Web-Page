@@ -8,7 +8,10 @@ module.exports = {
       },
       backgroundColor: {
         "pri":"red",
-      }
+      },
+      fontFamily: {
+        "Poppins":'Poppins',
+      },
     },
   },
   plugins: [],
