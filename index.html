@@ -13,22 +13,22 @@
     <title>DELUXE SUITE</title>
     <link rel="stylesheet" href="./dist/output.css">
 </head>
-<body class=" max-w-[1960px] relative mx-auto font-Poppins overflow-hidden">
+<body class=" max-w-[1960px] relative mx-auto font-Poppins ">
     <nav>
-        <div class="w-full shadow md:bg-black/60 h-12 md:h-20 pl-2 top-0 left-0 fixed z-50">
+        <div id="nav" class="nav">
             <ul id="menuContainer" class=" menu-container hidden ">
                 <li class="nav-item"><a href="#">Home</a></li>
                 <li class="nav-item"><a href="#rooms">Rooms</a></li>
                 <li class="nav-item"><a href="#">Facilities</a></li>
-                <li class="nav-item"><a href="#">reservation</a></li>
+                <li class="nav-item"><a href="#reservation">reservation</a></li>
                 <li class="nav-item"><a href="#">gallery</a></li>
                 <li class="nav-item"><a href="#news">news</a></li>
                 <li class="nav-item pb-0"><a href="#reviews">reviews</a></li>
             </ul>
 
             <div id="menuBtn" class="menu-btn">
-                <i id="menuIconOpen" class='bx bx-menu text-3xl text-white/75 w-40 h-40 mt-6 md:mt-0'></i>
-                <i id="menuIconClose" class='bx bx-x hidden text-3xl text-white w-40 h-40 mt-6 md:mt-0'></i>
+                <i id="menuIconOpen" class='bx bx-menu menu-icon'></i>
+                <i id="menuIconClose" class='bx bx-x hidden menu-icon'></i>
 
             </div>
         </div>
@@ -36,30 +36,30 @@
     <div class="overlay hidden md:hidden" id="overlay"></div>
 
     <head>
-        <div class=" w-full max-w-full h-[26rem] relative bg-right bg-hero bg-cover bg-no-repeat">
-            <div class="text-white uppercase absolute top-1/2 left-10 md:left-72">
-                <h1 class=" text-[1.5rem] sm:text-[2rem] md:text-[4rem] shadow-inner ">deluxe suite</h1>
-                <p class=" text-[0.6rem] md:text-[1.2rem] -mt-2 md:-mt-4 lg:-mt-2 shadow-inner">from only $299/night</p>
+        <div class=" header-container">
+            <div class="header">
+                <h1 class="header-title">deluxe suite</h1>
+                <p class="header-price">from only $299/night</p>
             </div>
         </div>
     </head>
-    <section class="flex w-full h-30 text-gray-600 justify-center">
-        <div class="md:w-[90%] w-full lg:flex justify-center align-middle ml-0 lg:ml-2 p-3 bg-orange-100">
-            <h3 class="my-3 md:mt-10 inline-block uppercase font-bold ">make reservation</h3>
-            <form class="lg:flex md:justify-center md:items-center w-full lg:w-[80%] ml-2 md:ml-10 pb-6 lg:pb-0" action="">
-                <div class="my-3 pr-10 lg:pr-0">
+    <section id="reservation" class="flex w-full h-30 text-gray-600 justify-center">
+        <div class="reservation">
+            <h3 class="reservation-title ">make reservation</h3>
+            <form class="reservation-form" action="">
+                <div class="my-3 reservation-item">
                     <label class="block lg:inline" for="checkIn">check in</label>
                     <input type="text" class=" w-full p-2 lg:w-32" id="checkIn">
                 </div>
-                <div class="md:my-3 pr-10 lg:pr-0">
+                <div class="md:my-3 reservation-item">
                     <label class="block lg:inline" for="checkOut">check out</label>
                     <input type="text" class=" w-full p-2 lg:w-32" id="checkOut">
                 </div>
-                <div class="my-3 pr-10 lg:pr-0">
+                <div class="my-3 reservation-item">
                     <label class="block lg:inline" for="numPerson">number of persons</label>
                     <input type="text" class=" w-full p-2 lg:w-32" id="numPerson">
                 </div>
-                <div class="md:my-3 pr-10 lg:pr-0">
+                <div class="md:my-3 reservation-item">
                     <label class="block  p-2 lg:inline" for="room">select room</label>
                     <!-- <input type="text" class=" w-full lg:w-32"> -->
                     <select name="room" id="room" class=" w-full p-2 lg:w-32" >
@@ -72,18 +72,18 @@
                     </select>
                 </div>
 
-                <button class="check-btn">check avalilabilty</button>
+                <button class="check-btn">check availability</button>
             </form>
         </div>
     </section>
-    <section id="rooms" class=" w-full p-5 mt-12 justify-center items-center ">
+    <section id="rooms" class=" w-full p-5 mt-12 justify-center items-center section-hide section">
         <div class=" px-5 md:px-40 text-center mb-12">
             <h1 class="uppercase text-xl md:text-3xl font-semibold">welcome to our hotel</h1>
-            <p class=" text-gray-600 text-base mt-3">Dear Guest, It is our pleasure to welcome you to (Your Hotel Name). Whether you are travelling on business or pleasure, we know you have a variety of hotels to choose from. We strive to provide you with a room that is clean and comfortable, with friendly attentive service at a value-conscious price.</p>
+            <p class=" text-gray-600 text-base mt-3">Dear Guest, It is our pleasure to welcome you to DELUXE SUITE Hotel. Whether you are travelling on business or pleasure, we know you have a variety of hotels to choose from. We strive to provide you with a room that is clean and comfortable, with friendly attentive service at a value-conscious price.</p>
         </div>
         <div class="md:mx-5 lg:mx-10 md:gap-2 md:flex md:h-[380px]">
-            <div  class="md:w-1/2 h-auto mb-2 md:mb-0 relative">
-                <img class="img-room" src="https://images.unsplash.com/photo-1540518614846-7eded433c457?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1157&q=80" alt="">
+            <div  class="md:w-1/2 h-auto mb-6 md:mb-0 relative ">
+                <img class="img-room lazy-img" src="https://images.unsplash.com/photo-1540518614846-7eded433c457?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1157&q=80" data-src="https://images.unsplash.com/photo-1540518614846-7eded433c457?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1157&q=80" alt="">
                 <div class="absolute top-0 left-0 text-white font-bold bg-white/30 px-4 py-2 md:p-6 uppercase text-lg tracking-wider">
                     our room
                 </div>
@@ -93,8 +93,8 @@
                 </div>
             </div>
             <div class="md:w-1/2 h-auto flex-col md:flex md:gap-y-1">
-                <div  class="h-1/2 mb-2 md:mb-0 relative">
-                    <img class="img-room" src="https://images.unsplash.com/photo-1568495248636-6432b97bd949?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" alt="">
+                <div  class="h-1/2 mb-6 md:mb-0 relative">
+                    <img class="img-room lazy-img" src="https://images.unsplash.com/photo-1568495248636-6432b97bd949?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" data-src="https://images.unsplash.com/photo-1568495248636-6432b97bd949?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" alt="">
                     
                     <div class="absolute bottom-4 left-8">
                         <div class="text-white uppercase font-bold">Queen suite</div>
@@ -102,7 +102,7 @@
                     </div>
                 </div>
                 <div  class="h-1/2 relative">
-                    <img class="img-room" src="https://images.unsplash.com/photo-1572987669554-0ba2ba9aee1f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+                    <img class="img-room lazy-img" src="https://images.unsplash.com/photo-1572987669554-0ba2ba9aee1f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" data-src="https://images.unsplash.com/photo-1572987669554-0ba2ba9aee1f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
                     <div class="absolute bottom-4 left-8">
                         <div class="text-white uppercase font-bold">Price suite</div>
                         <div class="text-white font-bold">$100/ Room/ Night</div>
@@ -111,13 +111,13 @@
             </div>          
         </div>
     </section>
-    <section class="uppercase text-center bg-orange-100 p-5 mt-10">
-        <div class="mb-3 text-lg tracking-tighter font-bold">events and conference</div>
+    <section class="uppercase text-center bg-orange-100 p-5 mt-10 section-hide section">
+        <div class="mb-3 text-lg tracking-tighter font-medium">events and conference</div>
         <h1 class=" text-2xl md:text-4xl">laravel gathering event</h1>
         <div class="text-sm text-gray-500 lowercase"> march 19-22, krakatau ballroom</div>
-        <button class=" news-btn mt-5 px-4 py-2 border border-1 text-lg hover:text-gray-700 transition-all hover:duration-100">learn more</button>
+        <button class=" news-btn mt-5 px-4 py-2 border border-1 text-base hover:text-gray-700 transition-all hover:duration-100">learn more</button>
     </section>
-    <section id="news" class="my-12 mx-auto md:overflow-hidden">
+    <section id="news" class="my-12 mx-auto md:overflow-hidden section-hide section">
         <h3 class="heading-news">news</h3>
         <div class=" md:flex gap-3 mx-auto md:overflow-x-scroll lg:overflow-x-hidden max-w-7xl p-4" id="news">
             <div class="mb-8 md:0">
@@ -134,33 +134,33 @@
             </div>
         </div>
     </section>
-    <section id="reviews" class="max-w-7xl mx-auto p-3">
+    <section id="reviews" class="max-w-7xl mx-auto p-3 section-hide section">
         <h3 class="uppercase text-xl md:text-2xl mb-6 text-center text-black font-bold">what they say  about us</h3>
         <div class="md:flex">
             <div class="">
-                <p class=" font-light text-lg md:text-2xl"> <span class=" text-3xl md:text-6xl mb-16 max-w-2xl">"</span>Great central location
-                    I stayed at DELUXE SUITE for a night, really enjoyed its location in the city centre where everything is within walking distance. The staff was very helpful, breakfast really delicious, and the room nice. I appreciated the luggage room option as well.</p>
-                <p class="mt-3 text-center md:text-start text-2xl font-bold text-gray-500">Nomember Guest</p>
+                <p class="font-light text-lg md:text-2xl"> <span class=" text-3xl md:text-6xl mb-16 max-w-2xl">"</span>Great central location I stayed at DELUXE SUITE for a night, really enjoyed its location in the city centre where everything is within walking distance. The staff was very helpful, breakfast really delicious, and the room nice. I appreciated the luggage room option as well.</p>
+                <p class="text-base mt-3 text-center md:text-start md:text-2xl font-bold text-gray-500">Nomember Guest</p>
             </div>
-                <img class=" rounded m-auto mt-5 mb-20 md:mt-0 md:ml-5 w-36 h-30 md:w-48 md:h-48 cursor-pointer" src="https://images.unsplash.com/photo-1618862629322-70b42024da10?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="">
-        </div>
+            <img class=" review-circle" src="https://images.unsplash.com/photo-1605207571234-4e27745239f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+
+    </div>
     </section>
-    <footer class="text-center md:flex md:justify-around bg-gray-900 mt-6 px-6 md:px-12 py-5 md:py-20 text-white">
+    <footer class="text-center md:flex md:justify-around bg-gray-900 mt-6 px-6 md:px-12 py-5 md:py-20 text-white section-hide section">
         <div class="mb-6 md:mb-0">
-            <h2 class="text-xl md:text-3xl mb-2 uppercase">MyHotel</h2>
-            <p class="text-sm md:text-lg">2022 myhotel theme by kaung thant</p>
+            <h2 class="text-xl md:text-2xl mb-2 uppercase">DELUXE SUITE</h2>
+            <p class="text-sm md:text-base">2022 DELUXE SUITE theme by kaung thant</p>
         </div>
         <div class="mb-6 md:mb-0">
-            <h2 class="text-xl md:text-3xl uppercase mb-2">Address</h2>
-            <p class="text-sm md:text-lg">my hotel Website</p>
-            <p class="text-sm md:text-lg">Your Address is in Bandung</p>
+            <h2 class="text-xl md:text-2xl uppercase mb-2">Address</h2>
+            <p class="text-sm md:text-base">DELUXE SUITE Website</p>
+            <p class="text-sm md:text-base">Your Address is in Bandung</p>
         </div>
         <div>
-            <h2 class="text-xl md:text-3xl uppercase mb-2">About gracilis</h2>
-            <p class="md:w-80 text-sm md:text-lg">Get Some Adventure with Cave Exploring · Tropical Fruits Day · Lovely Beaches Near Our Hotel · Location ·</p>
+            <h2 class="text-xl md:text-2xl uppercase mb-2">About gracilis</h2>
+            <p class="md:w-80 text-sm md:text-base">Get Some Adventure with Cave Exploring · Tropical Fruits Day · Lovely Famous Place Near Our Hotel · Location ·</p>
         </div>
     </footer>
 
-    <script src="./js/script.js"></script>
+    <script defer src="./js/script.js"></script>
 </body>
 </html>
