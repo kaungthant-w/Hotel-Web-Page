@@ -13,10 +13,10 @@
     <title>DELUXE SUITE</title>
     <link rel="stylesheet" href="./dist/output.css">
 </head>
-<body class=" max-w-[1960px] mx-auto font-Poppins ">
+<body class=" max-w-[1960px] relative mx-auto font-Poppins overflow-hidden">
     <nav>
-        <div class="max-w-[1960px] bg-black/80 h-12 md:h-20 sticky z-50">
-            <ul id="menuContainer" class=" menu-container hidden">
+        <div class="w-full shadow md:bg-black/60 h-12 md:h-20 pl-2 top-0 left-0 fixed z-50">
+            <ul id="menuContainer" class=" menu-container hidden ">
                 <li class="nav-item"><a href="#">Home</a></li>
                 <li class="nav-item"><a href="#rooms">Rooms</a></li>
                 <li class="nav-item"><a href="#">Facilities</a></li>
@@ -27,7 +27,9 @@
             </ul>
 
             <div id="menuBtn" class="menu-btn">
-                <i class='bx bx-menu text-3xl text-white mt-6 md:mt-0'></i>
+                <i id="menuIconOpen" class='bx bx-menu text-3xl text-white/75 w-40 h-40 mt-6 md:mt-0'></i>
+                <i id="menuIconClose" class='bx bx-x hidden text-3xl text-white w-40 h-40 mt-6 md:mt-0'></i>
+
             </div>
         </div>
     </nav>
@@ -37,7 +39,7 @@
         <div class=" w-full max-w-full h-[26rem] relative bg-right bg-hero bg-cover bg-no-repeat">
             <div class="text-white uppercase absolute top-1/2 left-10 md:left-72">
                 <h1 class=" text-[1.5rem] sm:text-[2rem] md:text-[4rem] shadow-inner ">deluxe suite</h1>
-                <p class=" text-[0.6rem] md:text-[1.2rem] -mt-2 md:-mt-4 lg:-mt-2 shadow-inner text-gray-300">from only $299/night</p>
+                <p class=" text-[0.6rem] md:text-[1.2rem] -mt-2 md:-mt-4 lg:-mt-2 shadow-inner">from only $299/night</p>
             </div>
         </div>
     </head>
@@ -45,7 +47,7 @@
         <div class="md:w-[90%] w-full lg:flex justify-center align-middle ml-0 lg:ml-2 p-3 bg-orange-100">
             <h3 class="my-3 md:mt-10 inline-block uppercase font-bold ">make reservation</h3>
             <form class="lg:flex md:justify-center md:items-center w-full lg:w-[80%] ml-2 md:ml-10 pb-6 lg:pb-0" action="">
-                <div class="md:my-3 pr-10 lg:pr-0">
+                <div class="my-3 pr-10 lg:pr-0">
                     <label class="block lg:inline" for="checkIn">check in</label>
                     <input type="text" class=" w-full p-2 lg:w-32" id="checkIn">
                 </div>
@@ -53,7 +55,7 @@
                     <label class="block lg:inline" for="checkOut">check out</label>
                     <input type="text" class=" w-full p-2 lg:w-32" id="checkOut">
                 </div>
-                <div class="md:my-3 pr-10 lg:pr-0">
+                <div class="my-3 pr-10 lg:pr-0">
                     <label class="block lg:inline" for="numPerson">number of persons</label>
                     <input type="text" class=" w-full p-2 lg:w-32" id="numPerson">
                 </div>
@@ -115,7 +117,7 @@
         <div class="text-sm text-gray-500 lowercase"> march 19-22, krakatau ballroom</div>
         <button class=" news-btn mt-5 px-4 py-2 border border-1 text-lg hover:text-gray-700 transition-all hover:duration-100">learn more</button>
     </section>
-    <section id="news" class="my-6 mx-auto md:overflow-hidden">
+    <section id="news" class="my-12 mx-auto md:overflow-hidden">
         <h3 class="heading-news">news</h3>
         <div class=" md:flex gap-3 mx-auto md:overflow-x-scroll lg:overflow-x-hidden max-w-7xl p-4" id="news">
             <div class="mb-8 md:0">
@@ -133,7 +135,7 @@
         </div>
     </section>
     <section id="reviews" class="max-w-7xl mx-auto p-3">
-        <h3 class="uppercase text-xl md:text-2xl mt-12 mb-10 text-center text-black font-bold">what they say  about us</h3>
+        <h3 class="uppercase text-xl md:text-2xl mb-6 text-center text-black font-bold">what they say  about us</h3>
         <div class="md:flex">
             <div class="">
                 <p class=" font-light text-lg md:text-2xl"> <span class=" text-3xl md:text-6xl mb-16 max-w-2xl">"</span>Great central location

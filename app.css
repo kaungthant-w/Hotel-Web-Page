@@ -3,15 +3,15 @@
 @tailwind utilities;
 
 .menu-container {
-    @apply text-white/80 right-0 top-0 uppercase text-sm md:mt-0 pl-6 py-6 md:ml-0 md:flex md:h-20 justify-end md:mr-36 items-center cursor-pointer pt-12 md:pt-4 md:bg-transparent
+    @apply text-white uppercase text-sm md:mt-0 pl-6 py-6 md:ml-0 md:flex md:h-20 justify-end md:mr-36 items-center cursor-pointer pt-12 md:pt-4 md:bg-transparent
 }
 
 .nav-item {
-    @apply last:mr-0 md:mr-8 lg:mr-10 mb-6 md:mb-0 hover:text-white hover:bg-white/50 hover:p-3 md:hover:bg-transparent md:hover:p-0 pb-3 md:pb-0 transition-all
+    @apply last:mr-0 md:mr-8 lg:mr-10 mb-6 md:mb-0 hover:text-white hover:bg-black/60 hover:p-3 md:hover:bg-transparent md:hover:p-0 pb-3 md:pb-0
 }
 
 .menu-btn {
-    @apply absolute right-3 bottom-5 w-10 h-12 md:hidden cursor-pointer
+    @apply absolute right-3 bottom-5 w-12 h-12 md:hidden cursor-pointer
 }
 
 .overlay {
