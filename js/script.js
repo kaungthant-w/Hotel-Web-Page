@@ -74,7 +74,14 @@ const loadImg = function(entries, observer) {
 const imgObserver = new IntersectionObserver(loadImg, {
     root:null,
     threshold:0,
-    rootMargin:'-200px',
 });
 
 imgTargets.forEach(img => imgObserver.observe(img));
+
+
+const slides = document.querySelectorAll(".slide");
+const slider = document.querySelector(".slider");
+slider.style.transform = 'scale(0.2)';
+slider.style.overflow = 'visible';
+
+slides.forEach((s, i) => (s.style.transform='translateX(${100*i}%'));
